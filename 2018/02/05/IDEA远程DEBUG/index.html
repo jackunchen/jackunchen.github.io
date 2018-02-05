@@ -86,14 +86,14 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="#IDEA远程DEBUG ###一、 环境说明服务器地址：100.66.102.75开发工具：IDEA 17 ###二、 远程Tomcat配置1 修改启动文件参数, 新增以下参数：1export JAVA_OPTS=&amp;quot;-agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=8081&amp;quot; 此设置方法会将debug的">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://yoursite.com/2018/02/05/IDEA远程DEBUG/1.png">
-<meta property="og:image" content="http://yoursite.com/2018/02/05/IDEA远程DEBUG/2.png">
-<meta property="og:image" content="http://yoursite.com/2018/02/05/IDEA远程DEBUG/3.png">
-<meta property="og:updated_time" content="2018-02-05T12:17:20.000Z">
+<meta property="og:image" content="http://yoursite.com/2018/02/05/IDEA远程DEBUG/IDEA远程DEBUG/1.png">
+<meta property="og:image" content="http://yoursite.com/2018/02/05/IDEA远程DEBUG/IDEA远程DEBUG/2.png">
+<meta property="og:image" content="http://yoursite.com/2018/02/05/IDEA远程DEBUG/IDEA远程DEBUG/3.png">
+<meta property="og:updated_time" content="2018-02-05T12:24:01.742Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
 <meta name="twitter:description" content="#IDEA远程DEBUG ###一、 环境说明服务器地址：100.66.102.75开发工具：IDEA 17 ###二、 远程Tomcat配置1 修改启动文件参数, 新增以下参数：1export JAVA_OPTS=&amp;quot;-agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=8081&amp;quot; 此设置方法会将debug的">
-<meta name="twitter:image" content="http://yoursite.com/2018/02/05/IDEA远程DEBUG/1.png">
+<meta name="twitter:image" content="http://yoursite.com/2018/02/05/IDEA远程DEBUG/IDEA远程DEBUG/1.png">
 
 
 
@@ -308,10 +308,10 @@
 <p>###二、 远程Tomcat配置<br>1 修改启动文件参数, 新增以下参数：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">export JAVA_OPTS=&quot;-agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=8081&quot;</span><br></pre></td></tr></table></figure></p>
 <p>此设置方法会将debug的监听端口设置为 8081，但是不影响正常访问的tomcat端口。</p>
 <p>2 重新启动需要调试的项目，确认刚才的配置生效，并且8081端口确实被该项目监听。</p>
-<p>###三、 本地IDEA 配置<br>1 新增remote服务，在Run/Edit Configurations/remote中配置服务，配置服务器ip与端口。<br><img src="./1.png" alt="Alt text"></p>
-<p><img src="./2.png" alt="Alt text"></p>
+<p>###三、 本地IDEA 配置<br>1 新增remote服务，在Run/Edit Configurations/remote中配置服务，配置服务器ip与端口。<br><img src="IDEA远程DEBUG/1.png" alt="Alt text"></p>
+<p><img src="IDEA远程DEBUG/2.png" alt="Alt text"></p>
 <p>2 启动调试按钮</p>
-<p><img src="./3.png" alt="Alt text"></p>
+<p><img src="IDEA远程DEBUG/3.png" alt="Alt text"></p>
 <p>到此已经连接成功，可以开始远程调试，但要保持跟服务器端代码一致，否则会导致debug不准确，同时要注意调试完成及时关闭释放端口。</p>
 
       
